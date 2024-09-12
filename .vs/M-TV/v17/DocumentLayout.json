@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Migrations\\20240912192545_IntialTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:M-TV\\Migrations\\20240912192545_IntialTables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|d:\\edu\\backend\\mvc\\crud-project\\m-tv\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|solutionrelative:m-tv\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|d:\\edu\\backend\\mvc\\crud-project\\m-tv\\models\\movieactor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|solutionrelative:m-tv\\models\\movieactor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|d:\\edu\\backend\\mvc\\crud-project\\m-tv\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|solutionrelative:m-tv\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|d:\\edu\\backend\\mvc\\crud-project\\m-tv\\models\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|solutionrelative:m-tv\\models\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|d:\\edu\\backend\\mvc\\crud-project\\m-tv\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|solutionrelative:m-tv\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|d:\\edu\\backend\\mvc\\crud-project\\m-tv\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|solutionrelative:m-tv\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|d:\\edu\\backend\\mvc\\crud-project\\m-tv\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|solutionrelative:m-tv\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|d:\\edu\\backend\\mvc\\crud-project\\m-tv\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|solutionrelative:m-tv\\models\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|d:\\edu\\backend\\mvc\\crud-project\\m-tv\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|solutionrelative:m-tv\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20240912192545_IntialTables.cs",
+              "DocumentMoniker": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Migrations\\20240912192545_IntialTables.cs",
+              "RelativeDocumentMoniker": "M-TV\\Migrations\\20240912192545_IntialTables.cs",
+              "ToolTip": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Migrations\\20240912192545_IntialTables.cs",
+              "RelativeToolTip": "M-TV\\Migrations\\20240912192545_IntialTables.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAQwFIAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T19:25:45.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Models\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "M-TV\\Models\\BaseEntity.cs",
+              "ToolTip": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Models\\BaseEntity.cs",
+              "RelativeToolTip": "M-TV\\Models\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T19:04:37.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MovieActor.cs",
+              "DocumentMoniker": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Models\\MovieActor.cs",
+              "RelativeDocumentMoniker": "M-TV\\Models\\MovieActor.cs",
+              "ToolTip": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Models\\MovieActor.cs",
+              "RelativeToolTip": "M-TV\\Models\\MovieActor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T19:04:13.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Actor.cs",
+              "DocumentMoniker": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Models\\Actor.cs",
+              "RelativeDocumentMoniker": "M-TV\\Models\\Actor.cs",
+              "ToolTip": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Models\\Actor.cs",
+              "RelativeToolTip": "M-TV\\Models\\Actor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T19:04:01.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "M-TV\\Models\\Category.cs",
+              "ToolTip": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Models\\Category.cs",
+              "RelativeToolTip": "M-TV\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T19:03:52.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Movie.cs",
+              "DocumentMoniker": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Models\\Movie.cs",
+              "RelativeDocumentMoniker": "M-TV\\Models\\Movie.cs",
+              "ToolTip": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Models\\Movie.cs",
+              "RelativeToolTip": "M-TV\\Models\\Movie.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T19:03:40.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GlobalUsings.cs",
+              "DocumentMoniker": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\GlobalUsings.cs",
+              "RelativeDocumentMoniker": "M-TV\\GlobalUsings.cs",
+              "ToolTip": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\GlobalUsings.cs",
+              "RelativeToolTip": "M-TV\\GlobalUsings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T18:33:10.638Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Program.cs",
+              "RelativeDocumentMoniker": "M-TV\\Program.cs",
+              "ToolTip": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Program.cs",
+              "RelativeToolTip": "M-TV\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T18:27:00.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\appsettings.json",
+              "RelativeDocumentMoniker": "M-TV\\appsettings.json",
+              "ToolTip": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\appsettings.json",
+              "RelativeToolTip": "M-TV\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-09-12T18:08:22.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "M-TV\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "M-TV\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAcwAkAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-12T18:01:14.034Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
