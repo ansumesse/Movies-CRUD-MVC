@@ -42,6 +42,26 @@ namespace M_TV.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Actors");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Image = "",
+                            Name = "Morgan Freeman"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Image = "",
+                            Name = "Marlon Brando"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Image = "",
+                            Name = "Al Pacino"
+                        });
                 });
 
             modelBuilder.Entity("M_TV.Models.Category", b =>
@@ -60,6 +80,58 @@ namespace M_TV.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Action"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Adventure"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Animation"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "Anime"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Name = "Comedy"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Name = "Crime"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Name = "Documentary"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            Name = "Drama"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            Name = "Family"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            Name = "Horror"
+                        });
                 });
 
             modelBuilder.Entity("M_TV.Models.Movie", b =>
@@ -87,6 +159,9 @@ namespace M_TV.Migrations
                         .IsRequired()
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
+
+                    b.Property<float>("Rate")
+                        .HasColumnType("real");
 
                     b.HasKey("Id");
 
@@ -124,13 +199,13 @@ namespace M_TV.Migrations
             modelBuilder.Entity("M_TV.Models.MovieActor", b =>
                 {
                     b.HasOne("M_TV.Models.Actor", "Actor")
-                        .WithMany("MyProperty")
+                        .WithMany("Movies")
                         .HasForeignKey("ActorId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("M_TV.Models.Movie", "Movie")
-                        .WithMany("MyProperty")
+                        .WithMany("Actors")
                         .HasForeignKey("MovieId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -142,7 +217,7 @@ namespace M_TV.Migrations
 
             modelBuilder.Entity("M_TV.Models.Actor", b =>
                 {
-                    b.Navigation("MyProperty");
+                    b.Navigation("Movies");
                 });
 
             modelBuilder.Entity("M_TV.Models.Category", b =>
@@ -152,7 +227,7 @@ namespace M_TV.Migrations
 
             modelBuilder.Entity("M_TV.Models.Movie", b =>
                 {
-                    b.Navigation("MyProperty");
+                    b.Navigation("Actors");
                 });
 #pragma warning restore 612, 618
         }
