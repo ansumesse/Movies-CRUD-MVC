@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "agT3+qEg0bVSf/dVJSeTSc5O/rn6tXV8axuYnTMyvF4=",
+  "Hash": "aAC4qkccGlkZqL1KCa9Hh9O+ZReRyMPGlTnhZ8iwaeI=",
   "Source": "M-TV",
   "BasePath": "_content/M-TV",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\M-TV.bundle.scp.css"
+    },
+    {
+      "Identity": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\assets\\images\\movies\\ee4df63c-c917-4d60-9158-a45d7d1611fc.jpg",
+      "SourceId": "M-TV",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\",
+      "BasePath": "_content/M-TV",
+      "RelativePath": "assets/images/movies/ee4df63c-c917-4d60-9158-a45d7d1611fc.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\movies\\ee4df63c-c917-4d60-9158-a45d7d1611fc.jpg"
     },
     {
       "Identity": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\bootstrap-icons\\bootstrap-icons.svg",

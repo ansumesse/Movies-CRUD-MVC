@@ -1,16 +1,21 @@
-﻿using M_TV.ViewModels;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-
-namespace M_TV.Controllers
+﻿namespace M_TV.Controllers
 {
 	public class MoviesController : Controller
 	{
         private readonly ApplicationDbContext context;
+        private readonly ICategoriesRepo categoriesRepo;
+        private readonly IActorsRepo actorsRepo;
+        private readonly IMoviesRepo moviesRepo;
 
-        public MoviesController(ApplicationDbContext Db)
+        public MoviesController(ApplicationDbContext context,
+			ICategoriesRepo categoriesRepo, 
+			IActorsRepo actorsRepo,
+			IMoviesRepo moviesRepo)
         {
-            context = Db;
+            this.context = context;
+            this.categoriesRepo = categoriesRepo;
+            this.actorsRepo = actorsRepo;
+            this.moviesRepo = moviesRepo;
         }
         public IActionResult Index()
 		{
@@ -21,20 +26,24 @@ namespace M_TV.Controllers
 		{
 			CreateMovieViewModel MoviesVM = new()
 			{
-				Categories = context.Categories
-				.Select(c => new SelectListItem { Text = c.Name, Value = c.Id.ToString() })
-				.OrderBy(c => c.Text),
-				Actors = context.Actors
-				.Select(a => new SelectListItem { Text = a.Name, Value = a.Id.ToString() })
-				.OrderBy(a => a.Text)
+				Categories = categoriesRepo.GetSelectListsCatigories(),
+				Actors = actorsRepo.GetSelectListsActors()
 			};
 			return View(MoviesVM);
 		}
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public IActionResult Create(CreateMovieViewModel newMovie)
+		public async Task<IActionResult> Create(CreateMovieViewModel newMovie)
 		{
-			return View();
+			if (ModelState.IsValid)
+			{
+				await moviesRepo.Create(newMovie);
+				return RedirectToAction(nameof(Index));
+			}
+
+			newMovie.Actors = actorsRepo.GetSelectListsActors();
+			newMovie.Categories = categoriesRepo.GetSelectListsCatigories();
+			return View(newMovie);
 		}
 		
 	}

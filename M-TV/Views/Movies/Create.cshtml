@@ -20,15 +20,16 @@
             <div class="form-group">
                 <label asp-for="CategoryId" class="control-label"></label>
                 <select asp-for="CategoryId" asp-items="Model.Categories" class="form-control">
-                    <option>Select Category</option>
+                    <option value="0">Select Category</option>
                 </select>
+                <span asp-validation-for="CategoryId" class="text-danger"></span>
                 
             </div>
             <div class="form-group">
                 <label asp-for="SelectedActors" class="control-label"></label>
                 <select asp-for="SelectedActors" asp-items="Model.Actors" class="form-control">
-                    <option>Select Actors</option>
                 </select>
+                <span asp-validation-for="SelectedActors" class="text-danger"></span>
 
             </div>
             <div class="form-group">
@@ -45,7 +46,7 @@
                 <label asp-for="Cover" class="control-label"></label>
                 <input asp-for="Cover" type="file" class="form-control" />
                 <small class="form-text text-muted">Only .jpg, .jpeg, .png max size 1M are allowed.</small>
-                <span asp-validation-for="Cover" class="text-danger"></span>
+                <span asp-validation-for="Cover" class="text-danger d-block"></span>
             </div>
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />

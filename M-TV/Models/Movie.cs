@@ -9,7 +9,7 @@ namespace M_TV.Models
 		[MaxLength(500)]
 		public string Cover { get; set; } = string.Empty;
 		[Range(0, 10)]
-        public float Rate { get; set; }
+        public int Rate { get; set; }
         [ForeignKey("Category")]
         public int CategoryId { get; set; }
         public Category Category { get; set; }

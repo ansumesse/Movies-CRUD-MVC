@@ -1,4 +1,6 @@
 
+using M_TV.Repository.MoviesRepository;
+
 namespace M_TV
 {
     public class Program
@@ -13,7 +15,10 @@ namespace M_TV
             builder.Services.AddDbContext<ApplicationDbContext>(option =>
             {
                 option.UseSqlServer(connictionString);
-            }); 
+            });
+            builder.Services.AddScoped<ICategoriesRepo, CategoriesRepo>();
+            builder.Services.AddScoped<IActorsRepo, ActorsRepo>();
+            builder.Services.AddScoped<IMoviesRepo, MoviesRepo>();
 
             var app = builder.Build();
 
