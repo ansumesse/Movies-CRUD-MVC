@@ -18,11 +18,7 @@ namespace M_TV.Repository.MoviesRepository
         }
         public async Task Create(CreateMovieViewModel newMovie)
         {
-            string coverName = $"{Guid.NewGuid()}{Path.GetExtension(newMovie.Cover.FileName)}";
-            string path = Path.Combine(imagesPath, coverName);
-
-            using var stream = File.Create(path);
-            await newMovie.Cover.CopyToAsync(stream);
+            string coverName = await SaveCover(newMovie.Cover);
 
             Movie movie = new Movie()
             {
@@ -52,8 +48,49 @@ namespace M_TV.Repository.MoviesRepository
                 .Include(m => m.Category)
                 .Include(m => m.MovieActors)
                 .ThenInclude(m => m.Actor)
-                .AsNoTracking()
+                /*.AsNoTracking()*/
                 .FirstOrDefault(m => m.Id == id);
+        }
+
+        public async Task<Movie?> Update(UpdateMovieViewModel model)
+        {
+            var movie = GetByID(model.Id);
+            if (movie is null)
+                return null;
+
+            var hasNewCover = model.Cover is not null;
+            var oldCover = movie.Cover;
+
+            movie.Name = model.Name;
+            movie.CategoryId = model.CategoryId;
+            movie.Rate = model.Rate;
+            movie.Discription = model.Discription;
+            if(hasNewCover)
+                movie.Cover = await SaveCover(model.Cover!);
+
+            var rowEffected = context.SaveChanges();
+            if (rowEffected > 0)
+            {
+                if (hasNewCover)
+                {
+                    var path = Path.Combine(imagesPath, oldCover);
+                    File.Delete(path);
+                }
+                return movie;
+            }
+            else
+                return null;
+
+
+        }
+        public async Task<string> SaveCover(IFormFile cover)
+        {
+            var coverName = $"{Guid.NewGuid()}{Path.GetExtension(cover.FileName)}";
+            var path = Path.Combine(imagesPath, coverName);
+
+            using var stream = File.Create(path);
+            await cover.CopyToAsync(stream);
+            return coverName;
         }
     }
 }

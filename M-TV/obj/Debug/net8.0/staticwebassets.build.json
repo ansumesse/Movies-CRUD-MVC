@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "5ELeqmkIRuHQbTiQgtsOSBg+3bHwRi9GY4+dnBqybMk=",
+  "Hash": "PeTuEVHGxqA9HkUCDUfwDKgdAxoE7gUSTVaWGbMdRTU=",
   "Source": "M-TV",
   "BasePath": "_content/M-TV",
   "Mode": "Default",
@@ -55,25 +55,6 @@
       "OriginalItemSpec": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\M-TV.bundle.scp.css"
     },
     {
-      "Identity": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\assets\\images\\movies\\1b6d2134-0bbf-42a1-b4f9-747b939ebcca.jpeg",
-      "SourceId": "M-TV",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\",
-      "BasePath": "_content/M-TV",
-      "RelativePath": "assets/images/movies/1b6d2134-0bbf-42a1-b4f9-747b939ebcca.jpeg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\movies\\1b6d2134-0bbf-42a1-b4f9-747b939ebcca.jpeg"
-    },
-    {
       "Identity": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\assets\\images\\movies\\2cea1fd5-680d-41fc-9519-a33d1462d029.jpg",
       "SourceId": "M-TV",
       "SourceType": "Discovered",
@@ -112,6 +93,25 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\movies\\43383737-dbd6-4707-93af-1476535fa0ce.jpeg"
     },
     {
+      "Identity": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\assets\\images\\movies\\550b12f5-139b-4187-aabe-14dba80885b1.jpg",
+      "SourceId": "M-TV",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\",
+      "BasePath": "_content/M-TV",
+      "RelativePath": "assets/images/movies/550b12f5-139b-4187-aabe-14dba80885b1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\movies\\550b12f5-139b-4187-aabe-14dba80885b1.jpg"
+    },
+    {
       "Identity": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\assets\\images\\movies\\896f8ccc-f095-48e2-8109-d6f1c7cec9d3.jpg",
       "SourceId": "M-TV",
       "SourceType": "Discovered",
@@ -129,6 +129,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\movies\\896f8ccc-f095-48e2-8109-d6f1c7cec9d3.jpg"
+    },
+    {
+      "Identity": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\assets\\images\\movies\\bad5882c-d7e8-4533-b68a-9b2b661c078b.jpg",
+      "SourceId": "M-TV",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\",
+      "BasePath": "_content/M-TV",
+      "RelativePath": "assets/images/movies/bad5882c-d7e8-4533-b68a-9b2b661c078b.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\movies\\bad5882c-d7e8-4533-b68a-9b2b661c078b.jpg"
     },
     {
       "Identity": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\assets\\images\\movies\\ee4df63c-c917-4d60-9158-a45d7d1611fc.jpg",

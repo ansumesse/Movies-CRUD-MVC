@@ -29,6 +29,7 @@
                 return NotFound();
             return View(movie);
         }
+
         [HttpGet]
 		public IActionResult Create()
 		{
@@ -39,20 +40,58 @@
 			};
 			return View(MoviesVM);
 		}
+
 		[HttpPost]
 		[ValidateAntiForgeryToken]
-		public async Task<IActionResult> Create(CreateMovieViewModel newMovie)
+		public async Task<IActionResult> Create(CreateMovieViewModel newMovieVM)
 		{
 			if (ModelState.IsValid)
 			{
-				await moviesRepo.Create(newMovie);
+				await moviesRepo.Create(newMovieVM);
 				return RedirectToAction(nameof(Index));
 			}
 
-			newMovie.Actors = actorsRepo.GetSelectListsActors();
-			newMovie.Categories = categoriesRepo.GetSelectListsCatigories();
-			return View(newMovie);
+			newMovieVM.Actors = actorsRepo.GetSelectListsActors();
+			newMovieVM.Categories = categoriesRepo.GetSelectListsCatigories();
+			return View(newMovieVM);
 		}
+        [HttpGet]
+        public IActionResult Update(int id)
+        {
+            var movie = moviesRepo.GetByID(id);
+            if (movie is null)
+                return NotFound();
+            UpdateMovieViewModel viewModel = new()
+            {
+                Id = movie.Id,
+                Name = movie.Name,
+                CategoryId = movie.CategoryId,
+                Discription = movie.Discription,
+                Rate = movie.Rate,
+                CoverName = movie.Cover,
+                Actors = actorsRepo.GetSelectListsActors(),
+                Categories = categoriesRepo.GetSelectListsCatigories()
+            };
+            return View(viewModel);
+
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Update(UpdateMovieViewModel editedMovieVM)
+        {
+            if (ModelState.IsValid)
+            {
+                var movie = await moviesRepo.Update(editedMovieVM);
+                if (movie is null)
+                    return BadRequest();
+                return RedirectToAction(nameof(Index));
+            }
+            editedMovieVM.Actors = actorsRepo.GetSelectListsActors();
+            editedMovieVM.Categories = categoriesRepo.GetSelectListsCatigories();
+            return View(editedMovieVM);
+
+        }
 		
 		public IActionResult AllowedExtensionsAction(IFormFile Cover)
 		{
