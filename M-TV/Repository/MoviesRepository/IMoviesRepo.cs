@@ -6,5 +6,6 @@
         public List<Movie> GetAll();
         public Movie? GetByID(int id);
         public Task<Movie?> Update(UpdateMovieViewModel model);
+        public bool Delete(int id);
     }
 }

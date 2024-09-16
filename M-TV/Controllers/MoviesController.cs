@@ -92,6 +92,12 @@
             return View(editedMovieVM);
 
         }
+        [HttpDelete]
+        public IActionResult Delete(int id)
+        {
+            var isDeleted = moviesRepo.Delete(id);
+            return isDeleted ? Ok() : BadRequest();
+        }
 		
 		public IActionResult AllowedExtensionsAction(IFormFile Cover)
 		{

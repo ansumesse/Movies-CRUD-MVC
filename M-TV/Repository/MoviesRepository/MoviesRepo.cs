@@ -82,7 +82,24 @@ namespace M_TV.Repository.MoviesRepository
                 return null;
 
 
+        }        
+        bool IMoviesRepo.Delete(int id)
+        {
+            bool isDeleted = false;
+            var movie = GetByID(id);
+            if (movie is null)
+                return isDeleted;
+            context.Movies.Remove(movie);
+            var rowEffected = context.SaveChanges();
+            if (rowEffected > 0)
+            {
+                File.Delete(Path.Combine(imagesPath, movie.Cover));
+                isDeleted = true;
+            }
+            return isDeleted;
+
         }
+
         public async Task<string> SaveCover(IFormFile cover)
         {
             var coverName = $"{Guid.NewGuid()}{Path.GetExtension(cover.FileName)}";
@@ -92,5 +109,6 @@ namespace M_TV.Repository.MoviesRepository
             await cover.CopyToAsync(stream);
             return coverName;
         }
+
     }
 }

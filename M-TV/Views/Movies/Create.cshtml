@@ -20,15 +20,18 @@
 
             <div class="form-group">
                 <label asp-for="CategoryId" class="control-label"></label>
-                <select asp-for="CategoryId" asp-items="Model.Categories" class="form-control">
-                    <option value="">Select Category</option>
+                <select asp-for="CategoryId" asp-items="Model.Categories" class="form-control" data-placeholder="Select Category">
+                    >
+                    <option value=""></option>
                 </select>
                 <span asp-validation-for="CategoryId" class="text-danger"></span>
             </div>
 
             <div class="form-group">
                 <label asp-for="SelectedActors" class="control-label"></label>
-                <select asp-for="SelectedActors" asp-items="Model.Actors" class="form-control"></select>
+                <select asp-for="SelectedActors" asp-items="Model.Actors" class="form-select" data-placeholder="Select Actors">
+                    <option></option>
+                </select>
                 <span asp-validation-for="SelectedActors" class="text-danger"></span>
             </div>
 

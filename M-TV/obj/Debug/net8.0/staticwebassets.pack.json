@@ -21,10 +21,6 @@
       "PackagePath": "staticwebassets\\assets\\images\\movies\\896f8ccc-f095-48e2-8109-d6f1c7cec9d3.jpg"
     },
     {
-      "Id": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\assets\\images\\movies\\bad5882c-d7e8-4533-b68a-9b2b661c078b.jpg",
-      "PackagePath": "staticwebassets\\assets\\images\\movies\\bad5882c-d7e8-4533-b68a-9b2b661c078b.jpg"
-    },
-    {
       "Id": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\assets\\images\\movies\\ee4df63c-c917-4d60-9158-a45d7d1611fc.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\movies\\ee4df63c-c917-4d60-9158-a45d7d1611fc.jpg"
     },
@@ -67,6 +63,10 @@
     {
       "Id": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\js\\movie-index.js",
+      "PackagePath": "staticwebassets\\js\\movie-index.js"
     },
     {
       "Id": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\js\\site.js",
@@ -299,6 +299,22 @@
     {
       "Id": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\lib\\select2\\css\\select2.min.css",
+      "PackagePath": "staticwebassets\\lib\\select2\\css\\select2.min.css"
+    },
+    {
+      "Id": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\lib\\select2\\js\\select2.min.js",
+      "PackagePath": "staticwebassets\\lib\\select2\\js\\select2.min.js"
+    },
+    {
+      "Id": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\lib\\sweetalert2\\sweetalert2.min.css",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\sweetalert2.min.css"
+    },
+    {
+      "Id": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\lib\\sweetalert2\\sweetalert2.min.js",
+      "PackagePath": "staticwebassets\\lib\\sweetalert2\\sweetalert2.min.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.M-TV.Microsoft.AspNetCore.StaticWebAssets.props",

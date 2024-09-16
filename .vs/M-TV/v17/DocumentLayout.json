@@ -3,32 +3,32 @@
   "WorkspaceRootPath": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|d:\\edu\\backend\\mvc\\crud-project\\m-tv\\views\\movies\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|solutionrelative:m-tv\\views\\movies\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|d:\\edu\\backend\\mvc\\crud-project\\m-tv\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|solutionrelative:m-tv\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|d:\\edu\\backend\\mvc\\crud-project\\m-tv\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|solutionrelative:m-tv\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|d:\\edu\\backend\\mvc\\crud-project\\m-tv\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|solutionrelative:m-tv\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|d:\\edu\\backend\\mvc\\crud-project\\m-tv\\wwwroot\\js\\movie-index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|solutionrelative:m-tv\\wwwroot\\js\\movie-index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|d:\\edu\\backend\\mvc\\crud-project\\m-tv\\repository\\moviesrepository\\moviesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|solutionrelative:m-tv\\repository\\moviesrepository\\moviesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|d:\\edu\\backend\\mvc\\crud-project\\m-tv\\views\\movies\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|solutionrelative:m-tv\\views\\movies\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|d:\\edu\\backend\\mvc\\crud-project\\m-tv\\viewmodels\\updatemovieviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|solutionrelative:m-tv\\viewmodels\\updatemovieviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|d:\\edu\\backend\\mvc\\crud-project\\m-tv\\viewmodels\\movieviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|solutionrelative:m-tv\\viewmodels\\movieviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|d:\\edu\\backend\\mvc\\crud-project\\m-tv\\viewmodels\\createmovieviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|solutionrelative:m-tv\\viewmodels\\createmovieviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|d:\\edu\\backend\\mvc\\crud-project\\m-tv\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|solutionrelative:m-tv\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|d:\\edu\\backend\\mvc\\crud-project\\m-tv\\repository\\moviesrepository\\imoviesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|solutionrelative:m-tv\\repository\\moviesrepository\\imoviesrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|d:\\edu\\backend\\mvc\\crud-project\\m-tv\\globalusings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,17 +42,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "MoviesController.cs",
               "DocumentMoniker": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Controllers\\MoviesController.cs",
               "RelativeDocumentMoniker": "M-TV\\Controllers\\MoviesController.cs",
               "ToolTip": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Controllers\\MoviesController.cs",
               "RelativeToolTip": "M-TV\\Controllers\\MoviesController.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAmwFEAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCMAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-12T21:22:14.39Z",
               "IsPinned": true,
@@ -61,79 +61,80 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MoviesRepo.cs",
-              "DocumentMoniker": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Repository\\MoviesRepository\\MoviesRepo.cs",
-              "RelativeDocumentMoniker": "M-TV\\Repository\\MoviesRepository\\MoviesRepo.cs",
-              "ToolTip": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Repository\\MoviesRepository\\MoviesRepo.cs",
-              "RelativeToolTip": "M-TV\\Repository\\MoviesRepository\\MoviesRepo.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAYwFgAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T02:05:27.046Z",
+              "Title": "site.js",
+              "DocumentMoniker": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "M-TV\\wwwroot\\js\\site.js",
+              "ToolTip": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "M-TV\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-16T08:08:31.802Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Update.cshtml",
-              "DocumentMoniker": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Views\\Movies\\Update.cshtml",
-              "RelativeDocumentMoniker": "M-TV\\Views\\Movies\\Update.cshtml",
-              "ToolTip": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Views\\Movies\\Update.cshtml",
-              "RelativeToolTip": "M-TV\\Views\\Movies\\Update.cshtml",
-              "ViewState": "AgIAABAAAAAAAAAAAAAuwB8AAABVAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Views\\Movies\\Create.cshtml",
+              "RelativeDocumentMoniker": "M-TV\\Views\\Movies\\Create.cshtml",
+              "ToolTip": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Views\\Movies\\Create.cshtml",
+              "RelativeToolTip": "M-TV\\Views\\Movies\\Create.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABcAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-16T01:14:42.017Z",
+              "WhenOpened": "2024-09-16T08:01:49.885Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UpdateMovieViewModel.cs",
-              "DocumentMoniker": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\ViewModels\\UpdateMovieViewModel.cs",
-              "RelativeDocumentMoniker": "M-TV\\ViewModels\\UpdateMovieViewModel.cs",
-              "ToolTip": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\ViewModels\\UpdateMovieViewModel.cs",
-              "RelativeToolTip": "M-TV\\ViewModels\\UpdateMovieViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T01:04:13.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CreateMovieViewModel.cs",
-              "DocumentMoniker": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\ViewModels\\CreateMovieViewModel.cs",
-              "RelativeDocumentMoniker": "M-TV\\ViewModels\\CreateMovieViewModel.cs",
-              "ToolTip": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\ViewModels\\CreateMovieViewModel.cs",
-              "RelativeToolTip": "M-TV\\ViewModels\\CreateMovieViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T01:02:51.807Z",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "M-TV\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "M-TV\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAC8AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-16T07:53:28.999Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "MovieViewModel.cs",
-              "DocumentMoniker": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\ViewModels\\MovieViewModel.cs",
-              "RelativeDocumentMoniker": "M-TV\\ViewModels\\MovieViewModel.cs",
-              "ToolTip": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\ViewModels\\MovieViewModel.cs",
-              "RelativeToolTip": "M-TV\\ViewModels\\MovieViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T01:02:43.609Z",
+              "Title": "movie-index.js",
+              "DocumentMoniker": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\js\\movie-index.js",
+              "RelativeDocumentMoniker": "M-TV\\wwwroot\\js\\movie-index.js",
+              "ToolTip": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\js\\movie-index.js",
+              "RelativeToolTip": "M-TV\\wwwroot\\js\\movie-index.js",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAQwBwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-09-16T07:44:45.448Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "M-TV\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "M-TV\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "IMoviesRepo.cs",
+              "DocumentMoniker": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Repository\\MoviesRepository\\IMoviesRepo.cs",
+              "RelativeDocumentMoniker": "M-TV\\Repository\\MoviesRepository\\IMoviesRepo.cs",
+              "ToolTip": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Repository\\MoviesRepository\\IMoviesRepo.cs",
+              "RelativeToolTip": "M-TV\\Repository\\MoviesRepository\\IMoviesRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-15T08:40:12.97Z"
+              "WhenOpened": "2024-09-16T06:28:39.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MoviesRepo.cs",
+              "DocumentMoniker": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Repository\\MoviesRepository\\MoviesRepo.cs",
+              "RelativeDocumentMoniker": "M-TV\\Repository\\MoviesRepository\\MoviesRepo.cs",
+              "ToolTip": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Repository\\MoviesRepository\\MoviesRepo.cs",
+              "RelativeToolTip": "M-TV\\Repository\\MoviesRepository\\MoviesRepo.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAcwGIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T02:05:27.046Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
