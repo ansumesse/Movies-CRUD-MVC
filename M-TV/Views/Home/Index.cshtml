@@ -1,8 +1,57 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model IEnumerable<M_TV.Models.Movie>
+
+@{
+    ViewData["Title"] = "Movies List";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+@if (!Model.Any())
+{
+    <div class="alert alert-warning">
+        <h4 class="alert-heading">Warning!</h4>
+        <p class="mb-0">There are no movies added yet!</p>
+    </div>
+}
+else
+{
+    <div class="container">
+        <div class="row">
+            @foreach (var movie in Model)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-white movie-card" style="background-image: url('@(FileSettings.ImagesPath)/@movie.Cover'); background-size:cover background-position: center; aspect-ratio: 3 / 4; height: 400px">
+
+                        
+                        <a asp-controller="Movies" asp-action="Details" asp-route-id="@movie.Id"  class="card-body d-flex flex-column justify-content-end text-decoration-none"  style="background-color: rgba(0, 0, 0, 0.6);">
+                            
+                            <h5 class="card-title">@movie.Name</h5>
+                            
+                            <p class="card-text">
+                                <span class="badge bg-dark">@(movie.Category?.Name ?? "N/A")</span>
+                            </p>
+                            
+                            
+                                <p class="mb-0">
+                                    @for (int i = 1; i <= 5; i++)
+                                    {
+                                        if (i <= movie.Rate / 2)
+                                        {
+                                        <i class="bi bi-star-fill text-warning"></i>
+                                        }
+                                        else
+                                        {
+                                        <i class="bi bi-star text-warning"></i>
+                                        }
+                                    }
+                                    <span> (@movie.Rate/10)</span>
+                                </p>
+                           
+                        </a>
+
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+}
+
+

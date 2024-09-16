@@ -17,7 +17,7 @@
             {
                 string extension = Path.GetExtension(file.FileName);
 
-                bool isAllowed = allowedExtenstion.Split(',').Contains(extension);
+                bool isAllowed = allowedExtenstion.Split(',').Contains(extension, StringComparer.OrdinalIgnoreCase);
                 if (isAllowed)
                 {
                     return ValidationResult.Success;

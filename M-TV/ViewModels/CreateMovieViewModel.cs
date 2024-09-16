@@ -6,8 +6,6 @@
         public string Name { get; set; } = string.Empty;
         
         [Display(Name = "Category")]
-        [Range(1, int.MaxValue, ErrorMessage ="Must Select Category")]
-        
         public int CategoryId { get; set; }
         public IEnumerable<SelectListItem> Categories { get; set; } = Enumerable.Empty<SelectListItem>();
         [MaxLength(2500)]
@@ -17,6 +15,10 @@
         public IEnumerable<SelectListItem> Actors { get; set; } = Enumerable.Empty<SelectListItem>();
         [Range(0, 10)]
         public int Rate { get; set; }
+
+        // [Remote(action: "AllowedExtensionsAction", controller: "Movies", ErrorMessage = "Invalid file.")]
+
+        [MaxFileSize(FileSettings.MaxFileSizeInBytes)]
         [AllowedExtension(FileSettings.AllowedImageExtensions)]
         public IFormFile Cover { get; set; } = default!;
 

@@ -1,6 +1,4 @@
-﻿
-
-namespace M_TV.Models
+﻿namespace M_TV.Models
 {
 	public class Movie: BaseEntity
 	{
@@ -12,7 +10,7 @@ namespace M_TV.Models
         public int Rate { get; set; }
         [ForeignKey("Category")]
         public int CategoryId { get; set; }
-        public Category Category { get; set; }
-		public ICollection<MovieActor> Actors { get; set; } = new List<MovieActor>();
+        public Category? Category { get; set; }
+		public ICollection<MovieActor> MovieActors { get; set; } = new List<MovieActor>();
     }
 }

@@ -1,4 +1,6 @@
-﻿namespace M_TV.Repository.MoviesRepository
+﻿
+
+namespace M_TV.Repository.MoviesRepository
 {
     public class MoviesRepo : IMoviesRepo
     {
@@ -26,13 +28,32 @@
             {
                 Cover = coverName,
                 CategoryId = newMovie.CategoryId,
-                Actors = newMovie.SelectedActors.Select(a => new MovieActor() { ActorId = a }).ToList(),
+                MovieActors = newMovie.SelectedActors.Select(a => new MovieActor() { ActorId = a }).ToList(),
                 Discription = newMovie.Discription,
                 Name = newMovie.Name,
                 Rate = newMovie.Rate
             };
             context.Add(movie);
             context.SaveChanges();
+        }
+
+        public List<Movie> GetAll()
+        {
+            List<Movie> movies = context.Movies
+                .AsNoTracking()
+                .Include(m=> m.Category)
+                .ToList();
+            return movies;
+        }
+
+        public Movie? GetByID(int id)
+        {
+            return context.Movies
+                .Include(m => m.Category)
+                .Include(m => m.MovieActors)
+                .ThenInclude(m => m.Actor)
+                .AsNoTracking()
+                .FirstOrDefault(m => m.Id == id);
         }
     }
 }

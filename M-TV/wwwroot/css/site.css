@@ -25,3 +25,12 @@ body {
 .navbar-nav .nav-link {
     font-size: 1.2em; 
 }
+
+.movie-card {
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+    .movie-card:hover {
+        transform: scale(1.05); /* Scale up on hover */
+        box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    }

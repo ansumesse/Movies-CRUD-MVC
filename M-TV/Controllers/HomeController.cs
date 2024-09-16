@@ -1,21 +1,21 @@
-using M_TV.Models;
-using Microsoft.AspNetCore.Mvc;
+
 using System.Diagnostics;
 
 namespace M_TV.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly IMoviesRepo moviesRepo;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IMoviesRepo moviesRepo)
         {
-            _logger = logger;
+            this.moviesRepo = moviesRepo;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var movies = moviesRepo.GetAll();
+            return View(movies);
         }
 
         public IActionResult Privacy()

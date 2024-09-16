@@ -18,10 +18,18 @@
             this.moviesRepo = moviesRepo;
         }
         public IActionResult Index()
-		{
-			return View();
-		}
-		[HttpGet]
+        {
+            var movies = moviesRepo.GetAll();
+            return View(movies);
+        }
+        public IActionResult Details(int id)
+        {
+            Movie? movie = moviesRepo.GetByID(id);
+            if (movie is null)
+                return NotFound();
+            return View(movie);
+        }
+        [HttpGet]
 		public IActionResult Create()
 		{
 			CreateMovieViewModel MoviesVM = new()
@@ -45,6 +53,38 @@
 			newMovie.Categories = categoriesRepo.GetSelectListsCatigories();
 			return View(newMovie);
 		}
+		
+		public IActionResult AllowedExtensionsAction(IFormFile Cover)
+		{
+            if (Cover is not null)
+            {
+                string extension = Path.GetExtension(Cover.FileName);
+
+                bool isAllowed = FileSettings.AllowedImageExtensions.Split(',').Contains(extension, StringComparer.OrdinalIgnoreCase);
+                if (!isAllowed)
+                {
+                    return Json($"Only {FileSettings.AllowedImageExtensions} are allowed.");
+                }
+
+                if (Cover.Length > FileSettings.MaxFileSizeInBytes)
+                {
+                    return Json($"Cover size must be less than {FileSettings.MaxFileSizeInBytes} bytes.");
+                }
+
+            }
+            return Json(true);
+        }
+		public IActionResult MaxFileSizeAction(IFormFile file)
+		{
+            if (file is not null)
+            {
+                if (file.Length > FileSettings.MaxFileSizeInBytes)
+                {
+                    return Json(false);
+                }
+            }
+            return Json(true);
+        }
 		
 	}
 }

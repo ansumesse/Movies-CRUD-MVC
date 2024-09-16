@@ -4,61 +4,90 @@
     ViewData["Title"] = "New Movie";
 }
 
-
-
 <h4>Create New Movie</h4>
 <hr />
 <div class="row">
-    <div class="col-md-4">
+    <!-- Left Half -->
+    <div class="col-md-6">
         <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="All" class="text-danger"></div>
+
             <div class="form-group">
                 <label asp-for="Name" class="control-label"></label>
                 <input asp-for="Name" placeholder="Name" class="form-control" />
                 <span asp-validation-for="Name" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="CategoryId" class="control-label"></label>
                 <select asp-for="CategoryId" asp-items="Model.Categories" class="form-control">
-                    <option value="0">Select Category</option>
+                    <option value="">Select Category</option>
                 </select>
                 <span asp-validation-for="CategoryId" class="text-danger"></span>
-                
             </div>
+
             <div class="form-group">
                 <label asp-for="SelectedActors" class="control-label"></label>
-                <select asp-for="SelectedActors" asp-items="Model.Actors" class="form-control">
-                </select>
+                <select asp-for="SelectedActors" asp-items="Model.Actors" class="form-control"></select>
                 <span asp-validation-for="SelectedActors" class="text-danger"></span>
-
             </div>
+
             <div class="form-group">
                 <label asp-for="Discription" class="control-label"></label>
                 <textarea asp-for="Discription" placeholder="Discription" class="form-control"></textarea>
                 <span asp-validation-for="Discription" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="Rate" class="control-label"></label>
-                <input asp-for="Rate" class="form-control" />
+                <input asp-for="Rate" value="" class="form-control"  />
                 <span asp-validation-for="Rate" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="Cover" class="control-label"></label>
-                <input asp-for="Cover" type="file" class="form-control" />
-                <small class="form-text text-muted">Only .jpg, .jpeg, .png max size 1M are allowed.</small>
+                <input asp-for="Cover" type="file" class="form-control" id="coverFileInput" />
+                <small class="form-text text-muted">Only @FileSettings.AllowedImageExtensions max size @(FileSettings.MaxFileSizeInMB)MB are allowed.</small>
                 <span asp-validation-for="Cover" class="text-danger d-block"></span>
             </div>
+
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
     </div>
+
+    <!-- Right Half -->
+    <div class="col-md-6">
+        <div class="d-flex justify-content-center align-items-center" style="height: 100%; ">
+            <img id="coverImage" src="#" alt="Image Preview" style="max-width: 100%; max-height: 400px; display: none;" />
+        </div>
+    </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
+<div class="mt-3">
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
 </div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script>
+        document.getElementById('coverFileInput').addEventListener('change', function (event) {
+            const file = event.target.files[0];
+            const imagePreview = document.getElementById('coverImage');
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    imagePreview.src = e.target.result;
+                    imagePreview.style.display = 'block';
+                };
+                reader.readAsDataURL(file);
+            } else {
+                imagePreview.src = '#';
+                imagePreview.style.display = 'none';
+            }
+        });
+    </script>
 }

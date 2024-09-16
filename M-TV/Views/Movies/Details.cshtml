@@ -1,0 +1,50 @@
+﻿@model M_TV.Models.Movie
+
+@{
+    ViewData["Title"] = Model.Name;
+}
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="row no-gutters">
+            <!-- Left half with movie details -->
+            <div class="col-md-8 p-0">
+                <div class="p-4">
+                    <h2 class="card-title">@Model.Name</h2>
+                    <p class="mb-1">
+                        <span class="badge bg-dark">@(Model.Category?.Name ?? "N/A")</span>
+                    </p>
+                    <p class="card-text"><strong>Description:</strong> @Model.Discription</p>
+                    <p class="card-text">
+                        <strong>Actors:</strong>
+                        @foreach (var actor in Model.MovieActors)
+                        {
+                            <span>@actor.Actor.Name</span>
+                            <br />
+                        }
+                    </p>
+                    <p class="card-text"><strong>Rate:</strong></p>
+                    <p class="mb-0">
+                        @for (int i = 1; i <= 5; i++)
+                        {
+                            if (i <= Model.Rate / 2)
+                            {
+                                <i class="bi bi-star-fill text-warning"></i>
+                            }
+                            else
+                            {
+                                <i class="bi bi-star text-warning"></i>
+                            }
+                        }
+                        <span> (@Model.Rate/10)</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right half with cover image -->
+            <div class="col-md-4 p-0">
+                <img src="@(FileSettings.ImagesPath)/@(Model.Cover)" class="card-img" alt="@Model.Name Cover" style="object-fit: contain; max-height: 500px; width: 100%;">
+            </div>
+        </div>
+    </div>
+</div>
