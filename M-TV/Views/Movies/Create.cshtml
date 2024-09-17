@@ -33,6 +33,7 @@
                     <option></option>
                 </select>
                 <span asp-validation-for="SelectedActors" class="text-danger"></span>
+                <a asp-action="Create" asp-controller="Actors">New Actor</a>
             </div>
 
             <div class="form-group">
@@ -49,13 +50,17 @@
 
             <div class="form-group">
                 <label asp-for="Cover" class="control-label"></label>
-                <input asp-for="Cover" type="file" class="form-control" id="coverFileInput" />
+                <input asp-for="Cover" id="coverFileInput"  type="file" class="form-control" 
+                    data-rule-extension="@FileSettings.AllowedImageExtensions.Replace(".", string.Empty)"
+                       data-msg-extension="Invalid extension"
+                       data-rule-filesize="@FileSettings.MaxFileSizeInBytes"
+                       data-msg-filesize="Maximum allowed size is @FileSettings.MaxFileSizeInMB MB">
                 <small class="form-text text-muted">Only @FileSettings.AllowedImageExtensions max size @(FileSettings.MaxFileSizeInMB)MB are allowed.</small>
                 <span asp-validation-for="Cover" class="text-danger d-block"></span>
             </div>
 
             <div class="form-group text-center">
-                <input type="submit" value="Create" class="btn btn-success btn-lg" />
+                <input type="submit" value="Add" class="btn btn-success btn-lg" />
             </div>
         </form>
     </div>
@@ -74,7 +79,8 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-
+        <script src="~/js/filesize-validator.js" asp-append-version="true"></script>
+        
     <script>
         document.getElementById('coverFileInput').addEventListener('change', function (event) {
             const file = event.target.files[0];

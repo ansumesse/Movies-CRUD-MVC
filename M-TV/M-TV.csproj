@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\assets\images\movies\" />
+    <Folder Include="wwwroot\assets\images\Actors\" />
   </ItemGroup>
 
 </Project>

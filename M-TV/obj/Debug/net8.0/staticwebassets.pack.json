@@ -5,12 +5,20 @@
       "PackagePath": "staticwebassets\\M-TV.bundle.scp.css"
     },
     {
+      "Id": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\assets\\images\\Actors\\61ea8830-c560-4ab1-a8fa-3ffcbfbd9dc8.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\Actors\\61ea8830-c560-4ab1-a8fa-3ffcbfbd9dc8.jpeg"
+    },
+    {
+      "Id": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\assets\\images\\Actors\\ca8dfb37-147f-4cf4-88c9-6a94b801c536.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\Actors\\ca8dfb37-147f-4cf4-88c9-6a94b801c536.jpg"
+    },
+    {
       "Id": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\assets\\images\\movies\\2cea1fd5-680d-41fc-9519-a33d1462d029.jpg",
       "PackagePath": "staticwebassets\\assets\\images\\movies\\2cea1fd5-680d-41fc-9519-a33d1462d029.jpg"
     },
     {
-      "Id": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\assets\\images\\movies\\43383737-dbd6-4707-93af-1476535fa0ce.jpeg",
-      "PackagePath": "staticwebassets\\assets\\images\\movies\\43383737-dbd6-4707-93af-1476535fa0ce.jpeg"
+      "Id": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\assets\\images\\movies\\2e31b421-0151-44d7-9318-d412aac0dd7e.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\movies\\2e31b421-0151-44d7-9318-d412aac0dd7e.jpeg"
     },
     {
       "Id": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\assets\\images\\movies\\896f8ccc-f095-48e2-8109-d6f1c7cec9d3.jpg",
@@ -59,6 +67,10 @@
     {
       "Id": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\js\\filesize-validator.js",
+      "PackagePath": "staticwebassets\\js\\filesize-validator.js"
     },
     {
       "Id": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\js\\movie-index.js",

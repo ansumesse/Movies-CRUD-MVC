@@ -70,6 +70,7 @@
                 Discription = movie.Discription,
                 Rate = movie.Rate,
                 CoverName = movie.Cover,
+                SelectedActors = movie.MovieActors.Select(m => m.ActorId).ToList(),
                 Actors = actorsRepo.GetSelectListsActors(),
                 Categories = categoriesRepo.GetSelectListsCatigories()
             };

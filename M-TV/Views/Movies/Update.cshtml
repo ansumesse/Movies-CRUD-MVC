@@ -30,6 +30,7 @@
                 <label asp-for="SelectedActors" class="control-label"></label>
                 <select asp-for="SelectedActors" asp-items="Model.Actors" class="form-control" multiple="multiple"></select>
                 <span asp-validation-for="SelectedActors" class="text-danger"></span>
+                <a asp-action="Create" asp-controller="Actors">New Actor</a>
             </div>
 
             <div class="form-group">
@@ -46,7 +47,11 @@
 
             <div class="form-group">
                 <label asp-for="Cover" class="control-label"></label>
-                <input asp-for="Cover" type="file" class="form-control" id="coverFileInput" />
+                <input asp-for="Cover" id="coverFileInput" type="file" class="form-control"
+                       data-rule-extension="@FileSettings.AllowedImageExtensions.Replace(".", string.Empty)"
+                       data-msg-extension="Invalid extension"
+                       data-rule-filesize="@FileSettings.MaxFileSizeInBytes"
+                       data-msg-filesize="Maximum allowed size is @FileSettings.MaxFileSizeInMB MB">
                 <small class="form-text text-muted">Only @FileSettings.AllowedImageExtensions max size @(FileSettings.MaxFileSizeInMB)MB are allowed.</small>
                 <span asp-validation-for="Cover" class="text-danger d-block"></span>
             </div>
@@ -60,7 +65,7 @@
     
     <div class="col-md-6">
         <div class="d-flex justify-content-center align-items-center" style="height: 100%; ">
-            <img id="coverImage" src="@(FileSettings.ImagesPath)/@(Model.CoverName)" alt="Image Preview" style="max-width: 100%; max-height: 400px;" />
+            <img id="coverImage" src="@(FileSettings.MoviesImagePath)/@(Model.CoverName)" alt="Image Preview" style="max-width: 100%; max-height: 400px;" />
         </div>
     </div>
 </div>
@@ -72,9 +77,8 @@
 @section Scripts {
     @{
         await Html.RenderPartialAsync("_ValidationScriptsPartial");
-    }
-
-    <script>
+        <script src="~/js/filesize-validator.js" asp-append-version="true"></script>
+        <script>
         document.getElementById('coverFileInput').addEventListener('change', function (event) {
             const file = event.target.files[0];
             const imagePreview = document.getElementById('coverImage');
@@ -92,4 +96,7 @@
             }
         });
     </script>
+    }
+
+
 }

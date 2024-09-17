@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("M-TV")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+612508360474c51fdecc7147464d1bb0b07edcf5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84e431bca8be0a0d2832f75e6e57c97c2ccbe07a")]
 [assembly: System.Reflection.AssemblyProductAttribute("M-TV")]
 [assembly: System.Reflection.AssemblyTitleAttribute("M-TV")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

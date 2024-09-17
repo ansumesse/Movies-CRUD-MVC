@@ -24,12 +24,12 @@ else
                 <tr>
                     <td>
                         <a asp-action="Details" asp-route-id="@movie.Id" class="d-flex align-items-center text-decoration-none">
-                            
+
                             <div class="flex-shrink-0">
-                                <img src="@(FileSettings.ImagesPath)/@(movie.Cover)" alt="@movie.Name Cover" class="img-thumbnail" style="width: 100px; height: auto;" />
+                                <img src="@(FileSettings.MoviesImagePath)/@(movie.Cover)" alt="@movie.Name Cover" class="img-thumbnail" style="width: 100px; height: auto;" />
                             </div>
 
-                            
+
                             <div class="flex-grow-1 ms-3">
                                 <h5 class="mb-1">@movie.Name</h5>
                                 <p class="mb-1">

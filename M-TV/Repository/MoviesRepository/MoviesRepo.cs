@@ -6,7 +6,7 @@ namespace M_TV.Repository.MoviesRepository
     {
         private readonly ApplicationDbContext context;
         private readonly IWebHostEnvironment webHostEnvironment;
-        private readonly string imagesPath;
+        private readonly string MoviesImagePath;
 
         public MoviesRepo(
             ApplicationDbContext context,
@@ -14,11 +14,11 @@ namespace M_TV.Repository.MoviesRepository
         {
             this.context = context;
             this.webHostEnvironment = webHostEnvironment;
-            imagesPath = $"{webHostEnvironment.WebRootPath}{FileSettings.ImagesPath}";
+            MoviesImagePath = $"{webHostEnvironment.WebRootPath}{FileSettings.MoviesImagePath}";
         }
         public async Task Create(CreateMovieViewModel newMovie)
         {
-            string coverName = await SaveCover(newMovie.Cover);
+            string coverName = await ImageServices.Save(MoviesImagePath, newMovie.Cover);
 
             Movie movie = new Movie()
             {
@@ -65,15 +65,17 @@ namespace M_TV.Repository.MoviesRepository
             movie.CategoryId = model.CategoryId;
             movie.Rate = model.Rate;
             movie.Discription = model.Discription;
+            movie.MovieActors = model.SelectedActors.Select(a => new MovieActor() { ActorId = a }).ToList();
+            
             if(hasNewCover)
-                movie.Cover = await SaveCover(model.Cover!);
+                movie.Cover = await ImageServices.Save(MoviesImagePath, model.Cover!);
 
             var rowEffected = context.SaveChanges();
             if (rowEffected > 0)
             {
                 if (hasNewCover)
                 {
-                    var path = Path.Combine(imagesPath, oldCover);
+                    var path = Path.Combine(MoviesImagePath, oldCover);
                     File.Delete(path);
                 }
                 return movie;
@@ -93,22 +95,14 @@ namespace M_TV.Repository.MoviesRepository
             var rowEffected = context.SaveChanges();
             if (rowEffected > 0)
             {
-                File.Delete(Path.Combine(imagesPath, movie.Cover));
+                File.Delete(Path.Combine(MoviesImagePath, movie.Cover));
                 isDeleted = true;
             }
             return isDeleted;
 
         }
 
-        public async Task<string> SaveCover(IFormFile cover)
-        {
-            var coverName = $"{Guid.NewGuid()}{Path.GetExtension(cover.FileName)}";
-            var path = Path.Combine(imagesPath, coverName);
-
-            using var stream = File.Create(path);
-            await cover.CopyToAsync(stream);
-            return coverName;
-        }
+       
 
     }
 }

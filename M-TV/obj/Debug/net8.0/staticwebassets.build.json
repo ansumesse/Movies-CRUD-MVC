@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "e9FdEcH12UWPGTpSuX8uFhjsQ+4yb5VlIE7r1vb4h8U=",
+  "Hash": "wWaodwJASWacDCssxpKHaw4PMZGbNCkuIuzEK8ViS3I=",
   "Source": "M-TV",
   "BasePath": "_content/M-TV",
   "Mode": "Default",
@@ -55,6 +55,44 @@
       "OriginalItemSpec": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\M-TV.bundle.scp.css"
     },
     {
+      "Identity": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\assets\\images\\Actors\\61ea8830-c560-4ab1-a8fa-3ffcbfbd9dc8.jpeg",
+      "SourceId": "M-TV",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\",
+      "BasePath": "_content/M-TV",
+      "RelativePath": "assets/images/Actors/61ea8830-c560-4ab1-a8fa-3ffcbfbd9dc8.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\Actors\\61ea8830-c560-4ab1-a8fa-3ffcbfbd9dc8.jpeg"
+    },
+    {
+      "Identity": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\assets\\images\\Actors\\ca8dfb37-147f-4cf4-88c9-6a94b801c536.jpg",
+      "SourceId": "M-TV",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\",
+      "BasePath": "_content/M-TV",
+      "RelativePath": "assets/images/Actors/ca8dfb37-147f-4cf4-88c9-6a94b801c536.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\Actors\\ca8dfb37-147f-4cf4-88c9-6a94b801c536.jpg"
+    },
+    {
       "Identity": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\assets\\images\\movies\\2cea1fd5-680d-41fc-9519-a33d1462d029.jpg",
       "SourceId": "M-TV",
       "SourceType": "Discovered",
@@ -74,12 +112,12 @@
       "OriginalItemSpec": "wwwroot\\assets\\images\\movies\\2cea1fd5-680d-41fc-9519-a33d1462d029.jpg"
     },
     {
-      "Identity": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\assets\\images\\movies\\43383737-dbd6-4707-93af-1476535fa0ce.jpeg",
+      "Identity": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\assets\\images\\movies\\2e31b421-0151-44d7-9318-d412aac0dd7e.jpeg",
       "SourceId": "M-TV",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\",
       "BasePath": "_content/M-TV",
-      "RelativePath": "assets/images/movies/43383737-dbd6-4707-93af-1476535fa0ce.jpeg",
+      "RelativePath": "assets/images/movies/2e31b421-0151-44d7-9318-d412aac0dd7e.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -90,7 +128,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\assets\\images\\movies\\43383737-dbd6-4707-93af-1476535fa0ce.jpeg"
+      "OriginalItemSpec": "wwwroot\\assets\\images\\movies\\2e31b421-0151-44d7-9318-d412aac0dd7e.jpeg"
     },
     {
       "Identity": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\assets\\images\\movies\\896f8ccc-f095-48e2-8109-d6f1c7cec9d3.jpg",
@@ -319,6 +357,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\js\\filesize-validator.js",
+      "SourceId": "M-TV",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\",
+      "BasePath": "_content/M-TV",
+      "RelativePath": "js/filesize-validator.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\filesize-validator.js"
     },
     {
       "Identity": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\wwwroot\\js\\movie-index.js",

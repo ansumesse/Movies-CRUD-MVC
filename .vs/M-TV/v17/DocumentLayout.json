@@ -1,12 +1,72 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|d:\\edu\\backend\\mvc\\crud-project\\m-tv\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|solutionrelative:m-tv\\controllers\\moviescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|d:\\edu\\backend\\mvc\\crud-project\\m-tv\\viewmodels\\createactorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|solutionrelative:m-tv\\viewmodels\\createactorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|d:\\edu\\backend\\mvc\\crud-project\\m-tv\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BA603C6F-AB83-4E1F-BD4D-9261265EA3AC}|M-TV\\M-TV.csproj|solutionrelative:m-tv\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MoviesController.cs",
+              "DocumentMoniker": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Controllers\\MoviesController.cs",
+              "RelativeDocumentMoniker": "M-TV\\Controllers\\MoviesController.cs",
+              "ToolTip": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Controllers\\MoviesController.cs",
+              "RelativeToolTip": "M-TV\\Controllers\\MoviesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T04:44:45.845Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateActorViewModel.cs",
+              "DocumentMoniker": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\ViewModels\\CreateActorViewModel.cs",
+              "RelativeDocumentMoniker": "M-TV\\ViewModels\\CreateActorViewModel.cs",
+              "ToolTip": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\ViewModels\\CreateActorViewModel.cs",
+              "RelativeToolTip": "M-TV\\ViewModels\\CreateActorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T07:00:33.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "M-TV\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Edu\\BackEnd\\MVC\\CRUD-Project\\M-TV\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "M-TV\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAmwDQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-17T06:41:20.512Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
