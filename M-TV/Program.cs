@@ -1,5 +1,6 @@
 
 using M_TV.Repository.MoviesRepository;
+using Microsoft.AspNetCore.Identity;
 
 namespace M_TV
 {
@@ -12,6 +13,7 @@ namespace M_TV
             string connictionString = builder.Configuration.GetConnectionString("default") ?? throw new InvalidOperationException("No Connection String Found");
 			// Add services to the container.
 			builder.Services.AddControllersWithViews();
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>().AddEntityFrameworkStores<ApplicationDbContext>();
             builder.Services.AddDbContext<ApplicationDbContext>(option =>
             {
                 option.UseSqlServer(connictionString);
@@ -34,7 +36,7 @@ namespace M_TV
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllerRoute(

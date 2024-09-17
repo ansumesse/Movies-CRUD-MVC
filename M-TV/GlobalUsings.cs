@@ -11,4 +11,5 @@ global using M_TV.Attributes;
 global using M_TV.Settings;
 global using M_TV.Repository.MoviesRepository;
 global using M_TV.Models;
+global using Microsoft.AspNetCore.Authorization;
 

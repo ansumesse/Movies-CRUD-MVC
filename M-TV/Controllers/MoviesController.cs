@@ -1,5 +1,6 @@
 ﻿namespace M_TV.Controllers
 {
+    [Authorize]
 	public class MoviesController : Controller
 	{
         private readonly ApplicationDbContext context;

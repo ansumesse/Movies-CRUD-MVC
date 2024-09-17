@@ -22,10 +22,37 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-controller="Movies" asp-action="Index">Movies</a>
-                        </li>
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Movies" asp-action="Index">Movies</a>
+                            </li>
+                        }
                     </ul>
+                    <ul class="navbar-nav">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            var firstNameClaim = User.Claims.FirstOrDefault(c => c.Type == "FirstName")?.Value;
+                            var lastNameClaim = User.Claims.FirstOrDefault(c => c.Type == "LastName")?.Value;
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" >Welcome @firstNameClaim @lastNameClaim</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Account" asp-action="Logout">Logout</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Account" asp-action="Register">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-controller="Account" asp-action="Login">Login</a>
+                            </li>
+                        }
+                    </ul>
+                   
                 </div>
             </div>
         </nav>

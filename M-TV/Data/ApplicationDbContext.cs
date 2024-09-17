@@ -1,9 +1,10 @@
 ﻿
 using M_TV.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace M_TV.Data
 {
-	public class ApplicationDbContext : DbContext
+	public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
 	{
         public DbSet<Movie> Movies { get; set; }
         public DbSet<Category> Categories { get; set; }
@@ -44,6 +45,7 @@ namespace M_TV.Data
 					new Actor(){Id = 2, Name  = "Marlon Brando"},
 					new Actor(){Id = 3, Name  = "Al Pacino"}
 				});
+
 		}
 
 	}

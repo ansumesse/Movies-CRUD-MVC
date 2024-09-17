@@ -3,6 +3,7 @@ using System.Diagnostics;
 
 namespace M_TV.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly IMoviesRepo moviesRepo;
