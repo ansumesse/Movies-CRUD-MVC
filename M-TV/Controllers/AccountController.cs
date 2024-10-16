@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
 using System.Security.Claims;
 
 namespace M_TV.Controllers
@@ -37,13 +37,21 @@ namespace M_TV.Controllers
                 var result = await userManager.CreateAsync(user, registerVM.Password);
                 if (result.Succeeded)
                 {
-                    await signInManager.SignInAsync(user, false);
+                    List<Claim> claims = new();
+                    claims.Add(new Claim("FirstName", user.FirstName));
+                    claims.Add(new Claim("LastName", user.LastName));
+                    await signInManager.SignInWithClaimsAsync(user, false, claims);
                     return RedirectToAction("Index", "Home");
                 }
                 else
                 {
                     foreach (var error in result.Errors)
                     {
+                        if (error.Description.Contains("Username"))
+                        {
+                            ModelState.AddModelError("UserName", error.Description);
+                            continue;
+                        }
                         ModelState.AddModelError("Password", error.Description);
                     }
                     
